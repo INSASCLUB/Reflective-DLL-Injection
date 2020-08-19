@@ -1,5 +1,9 @@
+/* Reflective DLL Injection 
+** Author: Vineet Kumar
+** POC Code
+*/
+
 // Took me like a month to figure out this technique manually
-// but worth it , i know lethal aka vineet is great coder ( not so good bruhh , am still learning )
 
 #include <string>
 #include <iostream>
@@ -9,7 +13,7 @@
 
 #define PROCESS_NAME L"PROCESS_NAME.exe"  //Your process name goes here
 
-uint8_t binary[] = {0x00}; // DLL data goes here, i post insas raw bytes here
+uint8_t binary[] = {0x00}; // DLL raw hexadecimal bytes goes here
 
 typedef HMODULE(__stdcall* pLoadLibraryA)(LPCSTR);
 
